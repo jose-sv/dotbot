@@ -1,0 +1,70 @@
+Host ews
+	Hostname linux.ews.illinois.edu
+	User josers2
+	IdentityFile ~/.ssh/uiuc_id_rsa
+Host cat
+	Hostname samcat.ninja
+	IdentityFile ~/.ssh/id_rsa
+
+Host git.samcat.ninja
+	RSAAuthentication yes
+	IdentityFile ~/.ssh/gitlab_id_rsa
+	User git
+
+Host gitlab.engr.illinois.edu
+	RSAAuthentication yes
+	IdentityFile ~/.ssh/illinois_gitlab
+	User git
+
+Host i2pc
+	HostName i2pc3.cs.illinois.edu
+	User heidars2
+	IdentityFile ~/.ssh/azin
+
+Host exodus
+# for ssh
+	Hostname exodus.csl.illinois.edu
+	User josers2
+	IdentityFile ~/.ssh/exodus_id_rsa
+
+Host exodus.csl.illinois.edu
+# for gitlab
+	Hostname exodus.csl.illinois.edu
+	User git
+	IdentityFile ~/.ssh/git_exodus_id_rsa
+
+Host courses
+	Hostname ssh.courses.engr.illinois.edu
+	User josers2
+	IdentityFile ~/.ssh/courses_id_rsa
+
+Host campuscluster
+	Hostname cc-login.campuscluster.illinois.edu
+	User josers2
+	IdentityFile ~/.ssh/cluster_id_rsa
+
+Host raichu
+	Hostname csl-josers2.csl.illinois.edu
+	User rodrigo
+	IdentityFile ~/.ssh/raichu_id_rsa
+
+Host vbox
+	Hostname localhost
+	Port 17777
+	User ece598
+	IdentityFile ~/.ssh/vbox_id_rsa
+
+Host gandolf
+	Hostname gandolf.cs.illinois.edu
+	User josers2
+	IdentityFile ~/.ssh/gandolf_id_rsa
+
+Host github.com
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/github_id_rsa
+
+Host weapon
+    Hostname weapon.cs.illinois.edu
+    User josers2
+    IdentityFile ~/.ssh/weapon_id_rsa
