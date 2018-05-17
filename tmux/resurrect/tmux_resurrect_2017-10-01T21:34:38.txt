@@ -1,0 +1,42 @@
+pane	cs523	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs523/paperReviews/9_28	1	zsh	:
+pane	cs598clf	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	0	vim	:vim rd_tx.cpp
+pane	cs598clf	0	:zsh	1	:*	1	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	0	zsh	:
+pane	cs598clf	0	:zsh	1	:*	2	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	1	zsh	:
+pane	ece511	0	:gem5	1	:*	0	:/secondary/gem5_master	0	zsh	:
+pane	ece511	0	:gem5	1	:*	1	:/secondary/gem5_master	0	zsh	:
+pane	ece511	0	:gem5	1	:*	2	:/secondary/gem5_master	0	zsh	:
+pane	ece511	0	:gem5	1	:*	3	:/tmp/gem5_master	1	zsh	:
+pane	ece511	0	:gem5	1	:*	4	:/secondary/gem5_master/configs/common	0	vim	:vim rungem5.sh
+pane	ece511	0	:gem5	1	:*	5	:/secondary/gem5_master	0	zsh	:sh rungem5.sh tagged blackscholes
+sh rungem5.sh tagged bodytrack
+sh rungem5.sh tagged fluidanimate
+sh rungem5.sh tagged x264
+pane	ece511	1	:ews	0	:!	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	zsh	:
+pane	ece511	2	:web	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511/assignment3	1	vim	:vim assignment3.tex
+pane	ece511	3	:gem5_mesi	0	:	0	:/tmp/gem5_master	1	bash	:/bin/bash ./rungem5.sh runall
+pane	ece511	4	:exodus	0	:-	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	zsh	:
+pane	ece527	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527	1	zsh	:
+pane	msp	0	:exodus	1	:*	0	:/main/owncloud/documents/School_UIUC/passat	1	ssh	:ssh exodus
+pane	passat	0	:slackPosts	0	:-	0	:/main/owncloud/documents/School_UIUC/passat/posts	1	vim	:vim pinq
+pane	passat	1	:jupyter	1	:*	0	:/main/owncloud/documents/School_UIUC/passat	0	python	:/home/rodrigo/anaconda3/bin/python /home/rodrigo/anaconda3/bin/jupyter-notebook
+pane	passat	1	:jupyter	1	:*	1	:/tmp	1	zsh	:
+pane	tensorflow	0	:tf	1	:*	0	:/main/owncloud/documents/School_UIUC/passat/localization	0	vim	:vim train_classify.py
+pane	tensorflow	0	:tf	1	:*	1	:/main/owncloud/documents/School_UIUC/passat/localization	0	zsh	:
+pane	tensorflow	0	:tf	1	:*	2	:/tmp	1	zsh	:
+pane	tensorflow	1	:zsh	0	:-	0	:/main/owncloud/documents/School_UIUC/passat	1	zsh	:
+pane	zsh	0	:htop	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs523	1	htop	:htop
+window	cs523	0	1	:*	6f73,359x99,0,0,14
+window	cs598clf	0	1	:*	f1a6,175x99,0,0[175x49,0,0,34,175x49,0,50{87x49,0,50,35,87x49,88,50,36}]
+window	ece511	0	1	:*	0803,175x99,0,0[175x49,0,0{87x49,0,0[87x24,0,0,5,87x24,0,25,43],87x49,88,0[87x24,88,0,40,87x24,88,25,42]},175x49,0,50{87x49,0,50,20,87x49,88,50,44}]
+window	ece511	1	0	:!	6e97,175x99,0,0,18
+window	ece511	2	0	:	6e96,175x99,0,0,17
+window	ece511	3	0	:	ee95,175x99,0,0,45
+window	ece511	4	0	:-	ee96,175x99,0,0,46
+window	ece527	0	1	:*	de7f,359x99,0,0,2
+window	msp	0	1	:*	6f78,359x99,0,0,38
+window	passat	0	0	:-	ee90,175x99,0,0,21
+window	passat	1	1	:*	72b2,359x99,0,0[359x50,0,0,22,359x48,0,51,23]
+window	tensorflow	0	1	:*	72ac,168x99,0,0[168x79,0,0,26,168x19,0,80{84x19,0,80,27,83x19,85,80,31}]
+window	tensorflow	1	0	:-	ef38,168x99,0,0,29
+window	zsh	0	1	:*	6211,116x36,0,0,12
+state	msp	ece527

@@ -1,0 +1,14 @@
+pane	ece511	0	:ews	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	ssh	:ssh ews
+pane	ece511	1	:.tex	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_tutorial	1	vim	:vim tutorial.tex
+pane	ece511	2	:evince	0	:-	0	:/home/rodrigo	0	evince	:evince tutorial.pdf
+pane	ece511	2	:evince	0	:-	1	:/home/rodrigo	0	evince	:evince homework/hw1/HW-1.pdf
+pane	ece511	2	:evince	0	:-	2	:/home/rodrigo	1	evince	:evince assignment.pdf
+pane	ece511	3	:gem5	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_master	1	zsh	:
+pane	ece511	3	:gem5	0	:	1	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_master	0	vim	:vim configs/tutorial/simple.py
+pane	rocket	0	:rocket	1	:*	0	:/secondary	1	zsh	:
+window	ece511	0	0	:	b803,183x52,0,0,6
+window	ece511	1	1	:*	5c7f,208x52,0,0,10
+window	ece511	2	0	:-	1503,208x52,0,0[208x26,0,0,11,208x25,0,27{104x25,0,27,16,103x25,105,27,24}]
+window	ece511	3	0	:	f04b,183x52,0,0{91x52,0,0,23,91x52,92,0,17}
+window	rocket	0	1	:*	bb9d,221x63,0,0,0
+state	ece511	

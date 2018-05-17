@@ -1,0 +1,22 @@
+pane	rocket	0	:~	1	:*	0	:/home/josers2/rocket-scripts	0	zsh	:less
+pane	rocket	0	:~	1	:*	1	:/home/josers2	0	zsh	:
+pane	rocket	0	:~	1	:*	2	:/home/josers2	1	zsh	:
+pane	rocket	0	:~	1	:*	3	:/home/josers2	0	htop	:htop
+pane	rocket	0	:~	1	:*	4	:/home/josers2/rocket-scripts	0	vim	:vim run_spnr
+pane	rocket	1	:~	0	:!-	0	:/home/josers2/rocket-chip-matt/vsim	1	zsh	:
+pane	rocket	1	:~	0	:!-	1	:/home/josers2	0	htop	:htop
+pane	rocket	1	:~	0	:!-	2	:/home/josers2	0	zsh	:
+pane	tf	0	:~/tensorflow	1	:*	0	:/home/josers2	0	htop	:htop
+pane	tf	0	:~/tensorflow	1	:*	1	:/home/josers2/tensorflow	0	zsh	:
+pane	tf	0	:~/tensorflow	1	:*	2	:/home/josers2/tensorflow/tensorflow/core	1	vim	:vim tensorflow/core/user_ops/sniper.cc
+pane	tf	1	:~/tensorflow	0	:!	0	:/home/josers2	0	htop	:htop
+pane	tf	1	:~/tensorflow	0	:!	1	:/home/josers2/tensorflow	1	zsh	:vim tensorflow/core/ops/nn_ops.cc
+pane	tf	2	:~/fathom	0	:!-	0	:/home/josers2/fathom	1	zsh	:vim fathom/deepq/deepq.py
+pane	tf	2	:~/fathom	0	:!-	1	:/home/josers2/arcade-learning-environment	0	zsh	:
+pane	tf	2	:~/fathom	0	:!-	2	:/home/josers2	0	htop	:htop
+window	rocket	0	1	:*	895e,245x67,0,0{122x67,0,0[122x33,0,0,21,122x33,0,34{55x33,0,34,14,66x33,56,34,33}],122x67,123,0[122x18,123,0,18,122x48,123,19,19]}
+window	rocket	1	0	:!-	0b1a,245x67,0,0{122x67,0,0,15,122x67,123,0[122x18,123,0,35,122x48,123,19,36]}
+window	tf	0	1	:*	5c9a,267x77,0,0[267x20,0,0,24,267x56,0,21{72x56,0,21,26,194x56,73,21,27}]
+window	tf	1	0	:!	886e,267x77,0,0[267x20,0,0,28,267x56,0,21,29]
+window	tf	2	0	:!-	51b6,267x77,0,0[267x38,0,0,30,267x38,0,39{133x38,0,39,31,133x38,134,39,32}]
+state	rocket	

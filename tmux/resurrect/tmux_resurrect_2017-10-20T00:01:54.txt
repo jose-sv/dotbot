@@ -1,0 +1,62 @@
+pane	0	0	:zsh	1	:*	0	:/home/rodrigo	1	zsh	:
+pane	cs523	0	:vim	0	:-	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs523/paperReviews/10_3	1	vim	:vim lwc.tex
+pane	cs523	1	:vim	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs523/paperReviews/10-17	1	zsh	:
+pane	cs523_proj	0	:hibench	0	:	0	:/secondary/cs523_proj	1	ssh	:ssh gandolf
+pane	cs523_proj	1	:hadi_hadoop	1	:*	0	:/secondary/cs523_proj	1	ssh	:ssh gandolf
+pane	cs523_proj	2	:zsh	0	:-	0	:/tmp/bigDataBench/users/hadi	1	zsh	:
+pane	cs598clf_hw	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	0	vim	:vim rd_tx.cpp
+pane	cs598clf_hw	0	:zsh	1	:*	1	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	0	zsh	:
+pane	cs598clf_hw	0	:zsh	1	:*	2	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	1	zsh	:
+pane	cs598clf_proj	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf/lab1/lab1/src	1	zsh	:
+pane	cs598clf_tex	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs598clf	1	zsh	:
+pane	ece511	0	:gem5	0	:	0	:/secondary/gem5_master	1	zsh	:
+pane	ece511	0	:gem5	0	:	1	:/secondary/gem5_master/configs/common	0	vim	:vim rungem5.sh
+pane	ece511	0	:gem5	0	:	2	:/secondary/gem5_master	0	zsh	:
+pane	ece511	1	:ews	0	:Z	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	zsh	:
+pane	ece511	1	:ews	0	:Z	1	:/secondary/gem5_master/benchmarks	0	vim	:vim benchmarks/
+pane	ece511	2	:web	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	vim	:vim netids_extension
+pane	ece511	3	:gem5Orig	0	:-	0	:/secondary/gem5_orig	0	zsh	:
+pane	ece511	3	:gem5Orig	0	:-	1	:/secondary/gem5_orig	1	zsh	:
+pane	ece511	4	:exodus	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	zsh	:
+pane	ece511	5	:midterm	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	vim	:vim projProposal.tex
+pane	ece511	6	:zsh	0	:	0	:/tmp	1	zsh	:
+pane	ece527	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527	1	zsh	:
+pane	omsp	0	:exodus	1	:*	0	:/tmp	1	zsh	:
+pane	omsp	1	:zsh	0	:-	0	:/main/owncloud/documents/School_UIUC/passat/dp_rng	1	zsh	:
+pane	passat	0	:slackPosts	0	:	0	:/main/owncloud/documents/School_UIUC/passat/posts	1	vim	:vim pinq
+pane	passat	1	:jupyter	0	:-	0	:/main/owncloud/documents/School_UIUC/passat	0	zsh	:
+pane	passat	1	:jupyter	0	:-	1	:/tmp	1	zsh	:
+pane	passat	2	:vim	1	:*	0	:/main/owncloud/documents/School_UIUC/passat	1	vim	:vim benchmark_specs.tex
+pane	tensorflow	0	:tf	1	:*	0	:/main/owncloud/documents/School_UIUC/passat/localization	0	vim	:vim train_classify.py
+pane	tensorflow	0	:tf	1	:*	1	:/main/owncloud/documents/School_UIUC/passat/localization	0	zsh	:
+pane	tensorflow	0	:tf	1	:*	2	:/tmp	1	zsh	:
+pane	tensorflow	1	:zsh	0	:-	0	:/main/owncloud/documents/School_UIUC/passat	1	zsh	:
+pane	vim	0	:vim	1	:*	0	:/home/rodrigo	1	vim	:vim /etc/vim
+pane	zsh	0	:zsh	1	:*	0	:/tmp	1	ssh	:ssh ajose@sbox.cs.illinois.edu
+window	0	0	1	:*	de7d,359x99,0,0,0
+window	cs523	0	0	:-	de7e,359x99,0,0,1
+window	cs523	1	1	:*	dcbf,175x99,0,0,2
+window	cs523_proj	0	0	:	d160,276x77,0,0,3
+window	cs523_proj	1	1	:*	68e6,276x77,0,0,36
+window	cs523_proj	2	0	:-	68e3,276x77,0,0,33
+window	cs598clf_hw	0	1	:*	90fe,175x99,0,0[175x49,0,0,5,175x49,0,50{87x49,0,50,6,87x49,88,50,7}]
+window	cs598clf_proj	0	1	:*	6e99,175x99,0,0,39
+window	cs598clf_tex	0	1	:*	de85,359x99,0,0,8
+window	ece511	0	0	:	bb8f,359x99,0,0[359x49,0,0,9,359x49,0,50{179x49,0,50,10,179x49,180,50,11}]
+window	ece511	1	0	:Z	e333,359x99,0,0{179x99,0,0,12,179x99,180,0,13}
+window	ece511	2	1	:*	6f73,359x99,0,0,14
+window	ece511	3	0	:-	e336,359x99,0,0{179x99,0,0,15,179x99,180,0,16}
+window	ece511	4	0	:	6f76,359x99,0,0,17
+window	ece511	5	0	:	6f77,359x99,0,0,18
+window	ece511	6	0	:	6f78,359x99,0,0,19
+window	ece527	0	1	:*	ef6f,359x99,0,0,20
+window	omsp	0	1	:*	ee90,175x99,0,0,21
+window	omsp	1	0	:-	ef71,359x99,0,0,22
+window	passat	0	0	:	ef72,359x99,0,0,23
+window	passat	1	0	:-	72b5,359x99,0,0[359x50,0,0,24,359x48,0,51,25]
+window	passat	2	1	:*	ef75,359x99,0,0,26
+window	tensorflow	0	1	:*	3f2a,359x99,0,0[359x58,0,0,27,359x40,0,59{180x40,0,59,28,178x40,181,59,29}]
+window	tensorflow	1	0	:-	6f70,359x99,0,0,30
+window	vim	0	1	:*	6e98,175x99,0,0,38
+window	zsh	0	1	:*	5921,83x33,0,0,31
+state	cs598clf_proj	cs598clf_hw

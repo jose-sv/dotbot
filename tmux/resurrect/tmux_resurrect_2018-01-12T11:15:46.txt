@@ -1,0 +1,18 @@
+pane	ml_integrity	0	:tensorflow	1	:*Z	0	:/secondary/models/tutorials/image/cifar10	0	vim.nox	:vim.nox -S Session.vim
+pane	ml_integrity	0	:tensorflow	1	:*Z	1	:/secondary/models/tutorials/image/cifar10	1	zsh	:
+pane	ml_integrity	0	:tensorflow	1	:*Z	2	:/secondary/models/tutorials/image/cifar10	0	zsh	:
+pane	ml_integrity	1	:zsh	0	:	0	:/secondary/jose/cs598_fastcnn/fastcnn	1	zsh	:
+pane	ml_integrity	2	:caffe	0	:	0	:/secondary/jose/caffe	1	vim.nox	:vim.nox -S Session.vim
+pane	ml_integrity	3	:fastCNN	0	:	0	:/secondary/jose/cs598_fastcnn/fastcnn	1	vim.nox	:vim.nox -S Session.vim
+pane	ml_integrity	3	:fastCNN	0	:	1	:/secondary/jose/cs598_fastcnn/fastcnn	0	zsh	:
+pane	ml_integrity	4	:writing	0	:-	0	:/secondary/jose/cs598clf/report	1	vim.nox	:vim.nox -S Session.vim
+pane	tensorflow	0	:tf	1	:*	0	:/tmp	1	zsh	:
+pane	workload_colocation	2	:vim.nox	1	:*	0	:/secondary/cs523_proj/results	1	vim.nox	:vim.nox run_search.py
+window	ml_integrity	0	1	:*Z	bf35,109x60,0,0{71x60,0,0,7,37x60,72,0[37x53,72,0,8,37x6,72,54,9]}
+window	ml_integrity	1	0	:	db04,267x70,0,0,63
+window	ml_integrity	2	0	:	5b08,267x70,0,0,19
+window	ml_integrity	3	0	:	f2f9,267x70,0,0{215x70,0,0,53,51x70,216,0,32}
+window	ml_integrity	4	0	:-	db05,267x70,0,0,64
+window	tensorflow	0	1	:*	59b5,109x60,0,0,16
+window	workload_colocation	2	1	:*	df56,326x82,0,0,46
+state	ml_integrity	tensorflow

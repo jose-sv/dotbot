@@ -1,0 +1,40 @@
+pane	cs533	0	:tensorflow	1	:*	0	:/secondary/tensorflow	0	vim	:vim tensorflow/core/kernels/conv_ops.cc
+pane	cs533	0	:tensorflow	1	:*	1	:/secondary/tensorflow	1	zsh	:
+pane	cs533	1	:zsim	0	:-Z	0	:/secondary/zsim	0	zsh	:
+pane	cs533	1	:zsim	0	:-Z	1	:/secondary/zsim	1	vim	:vim misc/hooks/zsim_hooks.h
+pane	dnn	0	:vim	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017spring/ece508/hw/ece508-convlayer	1	vim	:vim README.md
+pane	dnn_code	0	:cnnLab	1	:*Z	0	:/main/owncloud/documents/School_UIUC/courses/2017spring/ece508/hw/ece508-convlayer/src	0	vim	:vim main.cu
+pane	dnn_code	0	:cnnLab	1	:*Z	1	:/main/owncloud/documents/School_UIUC/courses/2017spring/ece508/hw/ece508-convlayer	1	zsh	:vim README.md
+vim /home/rodrigo/.rai_profile
+vim Makefile
+pane	dnn_code	1	:python	0	:-	0	:/home/rodrigo	1	python	:python
+pane	monitor	0	:htop	1	:*	0	:/home/rodrigo	1	htop	:htop
+pane	monitor	0	:htop	1	:*	1	:/home/rodrigo	0	zsh	:
+pane	tensorflow	0	:tensorflow	1	:*	0	:/secondary/tensorflow/tensorflow/core/kernels	0	vim	:vim tensorflow/core/kernels/conv_ops.cc
+pane	tensorflow	0	:tensorflow	1	:*	1	:/secondary/tensorflow	1	zsh	:
+pane	tensorflow	0	:tensorflow	1	:*	2	:/secondary/tensorflow	0	htop	:htop
+pane	tensorflow	1	:fathom	0	:-	0	:/secondary/fathom	0	sudo	:sudo /usr/local/cuda-8.0/bin/cuda-gdb -p 26671
+pane	tensorflow	1	:fathom	0	:-	1	:/secondary/fathom	0	python	:python fathom/deepq/deepq.py
+pane	tensorflow	1	:fathom	0	:-	2	:/secondary/fathom	1	vim	:vim fathom/deepq/deepq.py
+pane	tensorflow	2	:models	0	:	0	:/secondary/models	0	zsh	:
+pane	tensorflow	2	:models	0	:	1	:/secondary/tensorflow	0	zsh	:
+pane	tensorflow	2	:models	0	:	2	:/secondary/models	0	zsh	:
+pane	tensorflow	2	:models	0	:	3	:/secondary	1	zsh	:
+pane	tensorflow	3	:dqn	0	:Z	0	:/secondary/DQN-tensorflow	0	zsh	:
+pane	tensorflow	3	:dqn	0	:Z	1	:/secondary/DQN-tensorflow	0	zsh	:
+pane	tensorflow	3	:dqn	0	:Z	2	:/secondary/DQN-tensorflow	1	vim	:vim dqn/environment.py
+pane	tensorflow	4	:sparseKernel	0	:	0	:/secondary/tensorflow	1	zsh	:
+pane	tensorflow	5	:customNet	0	:	0	:/secondary	1	zsh	:
+window	cs533	0	1	:*	efdb,263x69,0,0{131x69,0,0,2,131x69,132,0,3}
+window	cs533	1	0	:-Z	efde,263x69,0,0{131x69,0,0,4,131x69,132,0,5}
+window	dnn	0	1	:*	e265,274x74,0,0,26
+window	dnn_code	0	1	:*Z	616a,83x34,0,0{41x34,0,0,28,41x34,42,0,30}
+window	dnn_code	1	0	:-	6b01,263x69,0,0,31
+window	monitor	0	1	:*	f1ac,263x69,0,0[263x33,0,0,6,263x35,0,34,7]
+window	tensorflow	0	1	:*	b2e8,349x92,0,0{184x92,0,0,8,164x92,185,0[164x44,185,0,9,164x47,185,45,10]}
+window	tensorflow	1	0	:-	1a9e,263x69,0,0{148x69,0,0[148x33,0,0,11,148x35,0,34,12],114x69,149,0,23}
+window	tensorflow	2	0	:	22b6,263x69,0,0{131x69,0,0[131x35,0,0,14,131x33,0,36,15],131x69,132,0[131x35,132,0,16,131x33,132,36,17]}
+window	tensorflow	3	0	:Z	aee5,263x69,0,0{131x69,0,0[131x35,0,0,18,131x33,0,36,19],131x69,132,0,20}
+window	tensorflow	4	0	:	eb00,263x69,0,0,21
+window	tensorflow	5	0	:	eb01,263x69,0,0,22
+state	tensorflow	

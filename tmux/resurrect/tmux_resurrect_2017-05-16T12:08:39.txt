@@ -1,0 +1,33 @@
+pane	0	0	:zsh	1	:*	0	:/home/rodrigo	1	zsh	:
+pane	cs533	0	:tensorflow	1	:*	0	:/secondary/tensorflow	0	vim	:vim tensorflow/core/kernels/conv_ops.cc
+pane	cs533	0	:tensorflow	1	:*	1	:/secondary/tensorflow	1	zsh	:
+pane	cs533	1	:zsim	0	:-Z	0	:/secondary/zsim	0	zsh	:
+pane	cs533	1	:zsim	0	:-Z	1	:/secondary/zsim	1	vim	:vim misc/hooks/zsim_hooks.h
+pane	monitor	0	:htop	1	:*	0	:/home/rodrigo	1	htop	:htop
+pane	monitor	0	:htop	1	:*	1	:/home/rodrigo	0	ssh	:ssh exodus
+pane	tensorflow	0	:tensorflow	0	:-	0	:/secondary/tensorflow/tensorflow/core/kernels	1	vim	:vim tensorflow/core/kernels/conv_ops.cc
+pane	tensorflow	0	:tensorflow	0	:-	1	:/secondary/tensorflow	0	zsh	:
+pane	tensorflow	0	:tensorflow	0	:-	2	:/secondary/tensorflow	0	htop	:htop
+pane	tensorflow	1	:fathom	1	:*Z	0	:/secondary/tensorflow/tensorflow/core/kernels	0	zsh	:
+pane	tensorflow	1	:fathom	1	:*Z	1	:/secondary/fathom	1	zsh	:
+pane	tensorflow	1	:fathom	1	:*Z	2	:/secondary/fathom	0	vim	:vim fathom/deepq/deepq.py
+pane	tensorflow	2	:models	0	:	0	:/secondary/models	0	zsh	:
+pane	tensorflow	2	:models	0	:	1	:/secondary/tensorflow	0	zsh	:
+pane	tensorflow	2	:models	0	:	2	:/secondary/models	0	zsh	:
+pane	tensorflow	2	:models	0	:	3	:/secondary	1	zsh	:
+pane	tensorflow	3	:dqn	0	:Z	0	:/secondary/DQN-tensorflow	0	zsh	:
+pane	tensorflow	3	:dqn	0	:Z	1	:/secondary/DQN-tensorflow	0	zsh	:
+pane	tensorflow	3	:dqn	0	:Z	2	:/secondary/DQN-tensorflow	1	vim	:vim dqn/environment.py
+pane	tensorflow	4	:sparseKernel	0	:	0	:/secondary/tensorflow	1	zsh	:
+pane	tensorflow	5	:customNet	0	:	0	:/secondary	1	vim	:vim testing/cpu_test.py
+window	0	0	1	:*	c23d,349x92,0,0,0
+window	cs533	0	1	:*	939d,83x34,0,0{41x34,0,0,1,41x34,42,0,2}
+window	cs533	1	0	:-Z	93a6,83x34,0,0{41x34,0,0,3,41x34,42,0,4}
+window	monitor	0	1	:*	347c,92x52,0,0[92x25,0,0,5,92x26,0,26,6]
+window	tensorflow	0	0	:-	b52b,349x92,0,0{184x92,0,0,7,164x92,185,0[164x45,185,0,8,164x46,185,46,9]}
+window	tensorflow	1	1	:*Z	a3a0,349x92,0,0{173x92,0,0[173x45,0,0,29,173x46,0,46,20],175x92,174,0,11}
+window	tensorflow	2	0	:	1ed7,349x93,0,0{174x93,0,0[174x47,0,0,12,174x45,0,48,13],174x93,175,0[174x47,175,0,14,174x45,175,48,15]}
+window	tensorflow	3	0	:Z	3dc8,349x93,0,0{174x93,0,0[174x47,0,0,16,174x45,0,48,17],174x93,175,0,18}
+window	tensorflow	4	0	:	e350,349x93,0,0,21
+window	tensorflow	5	0	:	e352,349x93,0,0,23
+state	tensorflow	

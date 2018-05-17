@@ -1,0 +1,27 @@
+pane	0	0	:zsh	1	:*	0	:/home/rodrigo	1	zsh	:
+pane	cs523	0	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/cs523/paperReviews/11-16	1	zsh	:
+pane	cs523_proj	0	:hibench	0	:	0	:/secondary/cs523_proj	1	ssh	:ssh gandolf
+pane	cs523_proj	1	:hadi_hadoop	1	:*	0	:/secondary/cs523_proj	1	zsh	:
+pane	cs523_proj	2	:zsh	0	:-	0	:/tmp	1	zsh	:
+pane	cs523_proj	3	:zsh	0	:	0	:/secondary/cs523_proj	1	zsh	:
+pane	cs598clf_proj	1	:sgx	1	:*	0	:/secondary/Cxx11SGXDemo	1	zsh	:
+pane	cs598clf_proj	1	:sgx	1	:*	1	:/secondary/models	0	zsh	:
+pane	ece511	2	:web	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511	0	zsh	:
+pane	ece511	2	:web	1	:*	1	:/main/owncloud/documents/School_UIUC/ta/ece511/webpage	1	zsh	:vim.nox lectures.html
+pane	tensorflow	0	:tf	1	:*	0	:/main/owncloud/documents/School_UIUC/passat/localization	0	vim	:vim train_classify.py
+pane	tensorflow	0	:tf	1	:*	1	:/main/owncloud/documents/School_UIUC/passat/localization	0	zsh	:
+pane	tensorflow	0	:tf	1	:*	2	:/tmp	1	zsh	:
+pane	tensorflow	1	:zsh	0	:-	0	:/main/owncloud/documents/School_UIUC/passat	1	zsh	:
+pane	zsh	0	:zsh	1	:*	0	:/tmp	1	zsh	:
+window	0	0	1	:*	ef7b,359x99,0,0,89
+window	cs523	0	1	:*	b77b,175x99,0,0,104
+window	cs523_proj	0	0	:	d6e0,256x69,0,0,3
+window	cs523_proj	1	1	:*	6e96,175x99,0,0,36
+window	cs523_proj	2	0	:-	6ba8,256x69,0,0,57
+window	cs523_proj	3	0	:	eba4,256x69,0,0,63
+window	cs598clf_proj	1	1	:*	4724,359x99,0,0{179x99,0,0,126,179x99,180,0,127}
+window	ece511	2	1	:*	6337,359x99,0,0{179x99,0,0,14,179x99,180,0,75}
+window	tensorflow	0	1	:*	3f2a,359x99,0,0[359x58,0,0,27,359x40,0,59{180x40,0,59,28,178x40,181,59,29}]
+window	tensorflow	1	0	:-	6890,365x96,0,0,30
+window	zsh	0	1	:*	6f71,359x99,0,0,31
+state	cs598clf_proj	cs523_proj

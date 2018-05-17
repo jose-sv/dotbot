@@ -1,0 +1,43 @@
+pane	ece511	0	:ews	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	zsh	:
+pane	ece511	1	:.tex	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	vim	:vim assignment2/assignment2.tex
+pane	ece511	2	:evince	0	:	0	:/main/owncloud/documents/School_UIUC/ta/ece511/assignment2	1	zsh	:
+pane	ece511	2	:evince	0	:	1	:/main/owncloud/documents/School_UIUC/ta/ece511	0	zsh	:
+pane	ece511	2	:evince	0	:	2	:/main/owncloud/documents/School_UIUC/courses/2016fall/ece511_computerArchitecture	0	zsh	:
+pane	ece511	2	:evince	0	:	3	:/main/owncloud/documents/School_UIUC/ta/ece511/assignment1	0	zsh	:
+pane	ece511	3	:gem5	0	:-	0	:/tmp	0	zsh	:
+pane	ece511	3	:gem5	0	:-	1	:/main/owncloud/documents/School_UIUC/ta/ece511/2016_gem5/ece511	1	zsh	:
+pane	ece511	3	:gem5	0	:-	2	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_master	0	zsh	:
+pane	ece511-webpage	0	:ssh	0	:-	0	:/main/owncloud/documents/School_UIUC/ta/ece511/webpage	1	ssh	:ssh courses
+pane	ece511-webpage	1	:upload_lectures	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511/webpage	0	vim	:vim addLecture.sh
+pane	ece511-webpage	1	:upload_lectures	1	:*	1	:/main/owncloud/documents/School_UIUC/ta/ece511/webpage	1	zsh	:vim lectures.html
+pane	ece527	0	:xilinx	0	:	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527	1	zsh	:
+pane	ece527	0	:xilinx	0	:	1	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527	0	zsh	:
+pane	ece527	0	:xilinx	0	:	2	:/secondary/Xilinx/xic	0	zsh	:
+pane	ece527	1	:mp1	1	:*	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527/assignment1	1	vim	:vim ./assignment1.sdk/basicIO/src/helloworld.c
+pane	ece527	1	:mp1	1	:*	1	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527	0	vim	:vim ./zedboard_master_XDC_RevC_D_v2.xdc
+pane	ece527	2	:zsh	0	:-	0	:/main/owncloud/documents/School_UIUC/courses/2017fall/ece527/assignment1	1	zsh	:
+pane	ece527	3	:zsh	0	:	0	:/main/owncloud/documents/School_UIUC/courses	1	zsh	:
+pane	gem5	0	:gem5	0	:-	0	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_master/configs/common/cores/arm	1	vim	:vim SConscript
+pane	gem5	0	:gem5	0	:-	1	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_master	0	zsh	:
+pane	gem5	1	:zsh	1	:*	0	:/main/owncloud/documents/School_UIUC/passat	1	zsh	:
+pane	gitlab	0	:gitlab	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	vim	:vim repos.sh
+pane	gitlab	0	:gitlab	1	:*	1	:/main/owncloud/documents/School_UIUC/ta/ece511	0	zsh	:
+pane	gitlab	0	:gitlab	1	:*	2	:/main/owncloud/documents/School_UIUC/ta/ece511	0	zsh	:
+pane	openmsp430	0	:msp430	1	:*	0	:/main/owncloud/documents/School_UIUC/passat/openmsp430_scripts	0	vim	:vim run_spnr
+pane	openmsp430	0	:msp430	1	:*	1	:/main/owncloud/documents/School_UIUC/passat/openmsp430_simulation/serial_mem/parallel/baseline/results_3.3_1000/run/sim/rtl_sim	0	zsh	:
+pane	openmsp430	0	:msp430	1	:*	2	:/main/owncloud/documents/School_UIUC/passat	1	ssh	:ssh exodus
+window	ece511	0	0	:	de7e,359x99,0,0,1
+window	ece511	1	1	:*	dcbf,175x99,0,0,2
+window	ece511	2	0	:	3941,359x99,0,0[359x51,0,0{179x51,0,0,3,179x51,180,0,4},359x47,0,52{184x47,0,52,5,174x47,185,52,6}]
+window	ece511	3	0	:-	0d31,175x99,0,0{86x99,0,0[86x49,0,0,7,86x49,0,50,8],88x99,87,0,9}
+window	ece511-webpage	0	0	:-	6e93,175x99,0,0,33
+window	ece511-webpage	1	1	:*	9599,175x99,0,0[175x50,0,0,12,175x48,0,51,13]
+window	ece527	0	0	:	59ec,359x99,0,0[359x49,0,0,14,359x49,0,50{179x49,0,50,15,179x49,180,50,16}]
+window	ece527	1	1	:*	3439,359x99,0,0[359x49,0,0,17,359x49,0,50,18]
+window	ece527	2	0	:-	6f78,359x99,0,0,19
+window	ece527	3	0	:	ef6f,359x99,0,0,20
+window	gem5	0	0	:-	2731,359x99,0,0[359x53,0,0,21,359x45,0,54,22]
+window	gem5	1	1	:*	ef72,359x99,0,0,23
+window	gitlab	0	1	:*	72f5,175x99,0,0[175x33,0,0,24,175x31,0,34,25,175x33,0,66,26]
+window	openmsp430	0	1	:*	bf9d,359x98,0,0[359x48,0,0{179x48,0,0,27,179x48,180,0,31},359x49,0,49,28]
+state	openmsp430	
