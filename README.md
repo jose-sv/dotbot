@@ -7,7 +7,7 @@ Installation
 
 To install, run the following:
 ```console
-git clone https://github.com/solsaver/.dotfiles ~/.dotfiles
+git clone https://gitlab.com/pksol/dotfiles ~/.dotfiles
 cd .dotfiles
 ./install
 ```
