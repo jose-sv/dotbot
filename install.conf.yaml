@@ -8,15 +8,19 @@
 - clean: ['~']
 
 - shell:
+  # Get/update all submodules
   - [git submodule update --init --recursive, Installing submodules]
+  # Make config directories
   - mkdir -p ~/.dotfiles/repos
   - mkdir -p ~/.git_template/hooks
   - mkdir -p ~/.cache/dein/repos/github.com/Shougo
+  # Run scripts
   - ./scripts/packages.sh
   - ./scripts/termite-install.sh
   - ./scripts/i3-gaps-install.sh
   - ./scripts/fzf-install.sh
   - ./scripts/powerline-fonts-install.sh
+  # Git configs
   - git config --global core.editor "nvim"
   - git config --global init.templatedir '~/.git_template'
 
