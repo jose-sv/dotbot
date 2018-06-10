@@ -10,6 +10,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.dotfiles/repos
+  - mkdir -p ~/.git_template/hooks
   - mkdir -p ~/.cache/dein/repos/github.com/Shougo
   - ./scripts/packages.sh
   - ./scripts/termite-install.sh
@@ -17,6 +18,7 @@
   - ./scripts/fzf-install.sh
   - ./scripts/powerline-fonts-install.sh
   - git config --global core.editor "nvim"
+  - git config --global init.templatedir '~/.git_template'
 
 - link:
     ~/.zgen: zgen
@@ -27,7 +29,6 @@
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.config/i3: i3
-    ~/.config/i3blocks: i3blocks
-    ~/.config/i3status: i3status
     ~/.config/termite: termite
+    ~/.git_template: git_template
 
