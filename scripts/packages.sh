@@ -14,5 +14,6 @@ sudo apt install -y \
 	neovim \
 	python-pip python-setuptools \
 	ranger \
+  software-properties-common \
 	tmux \
 	zsh
