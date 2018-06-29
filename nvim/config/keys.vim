@@ -4,6 +4,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Ctrl-{hjkl} for navigating out of terminal panes
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+
 " Useful mappings for managing tabs
 map <leader>tn :tabnew .<cr>
 map <leader>to :tabonly<cr>

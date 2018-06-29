@@ -8,7 +8,9 @@ sudo apt install -y \
   curl \
   feh \
   fonts-font-awesome \
+  ghc \
   git \
+  haskell-stack \
   htop \
   jq \
   neovim \

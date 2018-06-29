@@ -29,9 +29,8 @@
     ~/.zshrc: zshrc
     ~/.config/nvim: nvim
     ~/.cache/dein/repos/github.com/Shougo/dein.vim: dein.vim
-    ~/.tmux: .tmux
-    ~/.tmux.conf: .tmux/.tmux.conf
-    ~/.tmux.conf.local: tmux.conf.local
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.config/i3: i3
     ~/.config/termite: termite
     ~/.git_template: git_template
