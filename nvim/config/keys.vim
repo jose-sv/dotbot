@@ -23,7 +23,7 @@ map <leader>t<leader> :tabnext
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
-nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+nmap <leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
 " for splits
@@ -35,12 +35,5 @@ map <leader>hp :split .<cr>
 " Insert empty line
 nmap <C-o> o<Esc>
 
-" Opens a new tab with the current buffer's path
-" Super useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
-
-" Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
-
-" Toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+" VimFiler mappings
+map <leader>vf :VimFilerBufferDir<cr>
