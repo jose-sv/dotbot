@@ -58,3 +58,8 @@ export EDITOR='nvim'
 unset GREP_OPTIONS
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
