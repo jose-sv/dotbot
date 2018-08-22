@@ -10,8 +10,10 @@ if ! zgen saved; then
 	zgen oh-my-zsh
 
 	# Specify particular plugins here
-	zgen oh-my-zsh plugins/command-not-found
+    zgen oh-my-zsh plugins/command-not-found
 	zgen oh-my-zsh plugins/git
+	zgen oh-my-zsh plugins/tmux
+	zgen oh-my-zsh plugins/extract
 	zgen oh-my-zsh plugins/history
 	zgen oh-my-zsh plugins/web-search
 	zgen oh-my-zsh themes/ys
@@ -49,6 +51,7 @@ alias dd='dd status=progress'
 alias c='clear'
 alias grep='grep --color=auto'
 alias vim='nvim'
+alias p='popd'
 
 export TERM='xterm-256color'
 export EDITOR='nvim'

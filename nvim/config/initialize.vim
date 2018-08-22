@@ -46,6 +46,7 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('christoomey/vim-tmux-navigator')
 	call dein#add('jmcantrell/vim-virtualenv')
 	call dein#add('maxbrunsfeld/vim-yankstack')
+	call dein#add('tpope/vim-unimpaired')
 
 	let g:deoplete#enable_at_startup = 1
 	call dein#end()

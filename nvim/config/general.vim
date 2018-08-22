@@ -139,3 +139,5 @@ set path=.,,**
 set background=dark
 colorscheme gruvbox
 
+set cursorline
+set colorcolumn=80
