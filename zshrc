@@ -60,6 +60,12 @@ unset GREP_OPTIONS
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Source lmod init script
+source /usr/share/lmod/lmod/init/profile
+source /etc/profile.d/zzz_eli_lmod.sh
+# Fix for certain GTK apps crashing
+GTK_IM_MODULE=''
+
 if [ -z "$TMUX" ]
 then
     tmux attach -t TMUX || tmux new -s TMUX
