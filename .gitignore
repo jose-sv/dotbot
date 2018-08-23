@@ -4,3 +4,4 @@ tmux/plugins/
 tmux/resurrect
 tags*
 repos/
+.nfs*
