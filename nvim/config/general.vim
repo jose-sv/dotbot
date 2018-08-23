@@ -1,3 +1,5 @@
+set rtp+=~/.fzf
+
 set t_Co=256
 
 " Python highlighting
@@ -141,3 +143,6 @@ colorscheme gruvbox
 
 set cursorline
 set colorcolumn=80
+
+" Remap VIM 0 to first non-blank character
+map 0 ^

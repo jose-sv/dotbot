@@ -52,9 +52,23 @@ alias c='clear'
 alias grep='grep --color=auto'
 alias vim='nvim'
 alias p='popd'
+alias pu='pushd'
 
 export TERM='xterm-256color'
 export EDITOR='nvim'
 unset GREP_OPTIONS
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND='find . -path "*/\.*" -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//'
+
+# Source lmod init script
+source /usr/share/lmod/lmod/init/profile
+source /etc/profile.d/zzz_eli_lmod.sh
+# Fix for certain GTK apps crashing
+GTK_IM_MODULE=''
+
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
