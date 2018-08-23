@@ -52,6 +52,7 @@ alias c='clear'
 alias grep='grep --color=auto'
 alias vim='nvim'
 alias p='popd'
+alias pu='pushd'
 
 export TERM='xterm-256color'
 export EDITOR='nvim'
