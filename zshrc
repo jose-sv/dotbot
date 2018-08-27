@@ -63,7 +63,15 @@ bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Source lmod init script
+source /usr/share/lmod/lmod/init/profile
+source /etc/profile.d/zzz_eli_lmod.sh
+# Fix for certain GTK apps crashing
+GTK_IM_MODULE=''
+
 if [ -z "$TMUX" ]
 then
     tmux attach -t TMUX || tmux new -s TMUX
 fi
+
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
