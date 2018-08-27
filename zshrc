@@ -16,6 +16,7 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/extract
 	zgen oh-my-zsh plugins/history
 	zgen oh-my-zsh plugins/web-search
+	zgen oh-my-zsh plugins/vi-mode
 	zgen oh-my-zsh themes/ys
 
 	# NOTE: zsh-syntax-highlighting *must* come before zsh-history-substring
@@ -58,6 +59,8 @@ export TERM='xterm-256color'
 export EDITOR='nvim'
 unset GREP_OPTIONS
 
+bindkey -v
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Source lmod init script
@@ -70,3 +73,5 @@ if [ -z "$TMUX" ]
 then
     tmux attach -t TMUX || tmux new -s TMUX
 fi
+
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
