@@ -68,3 +68,13 @@ Host weapon
     Hostname weapon.cs.illinois.edu
     User josers2
     IdentityFile ~/.ssh/weapon_id_rsa
+
+Host bahamut
+    Hostname bahamut.cs.illinois.edu
+    User josers2
+    IdentityFile ~/.ssh/bahamut_id_rsa
+
+Host mako
+    Hostname mako.cs.illinois.edu
+    User josers2
+    IdentityFile ~/.ssh/bahamut_id_rsa

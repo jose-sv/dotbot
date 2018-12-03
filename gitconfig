@@ -2,8 +2,10 @@
 	email = jrodrigosv94@gmail.com
 	name = Jose Rodrigo Sanchez Vicarte
 [core]
-	editor = vim
+	editor = nvim
 [push]
 	default = simple
 [credential]
 	helper = cache --timeout=30000
+[init]
+	templatedir = ~/.git_template
