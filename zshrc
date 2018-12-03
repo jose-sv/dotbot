@@ -74,4 +74,29 @@ then
     tmux attach -t TMUX || tmux new -s TMUX
 fi
 
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+
+unalias rm
+
+generic_condor () {
+    echo $(pwd)
+    condor_submit ${HOME}/generic.condor Executable=$1 Arguments=$2 InitialDir=$(pwd)
+}
+
+alias ipython="python -m IPython"
+
+nzFiles() {
+    # if there are arguments
+    if [ $# -ne 0 ]
+    then
+        # list all files with size > 0
+        for i; do
+            if [ -s $i ]
+            then
+                echo $i
+            fi
+        done
+    fi
+}
+
+# export LD_LIBRARY_PATH=/home/josers2/OLA/stp/build/lib:$LD_LIBRARY_PATH
