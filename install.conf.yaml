@@ -1,19 +1,36 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+    shell:
+      stdout: true
+
 - clean: ['~']
 
+- shell:
+  # Get/update all submodules
+  - [git submodule update --init --recursive, Installing submodules]
+  # Make config directories
+  - mkdir -p ~/.dotfiles/repos
+  - mkdir -p ~/.git_template/hooks
+  - mkdir -p ~/.cache/dein/repos/github.com/Shougo
+  # Run scripts
+  - ./scripts/packages.sh
+  - ./scripts/termite-install.sh
+  - ./scripts/i3-gaps-install.sh
+  - ./scripts/fzf-install.sh
+  - ./scripts/powerline-fonts-install.sh
+  # Git configs
+  - git config --global core.editor "nvim"
+  - git config --global init.templatedir '~/.git_template'
+
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
-    ~/.tmux.conf: tmux.conf
+    ~/.zgen: zgen
     ~/.zshrc: zshrc
-    ~/.xinitrc: xinitrc
-    ~/.i3status.conf: i3status.conf
-    ~/.config/i3:
-        path: config/i3/
-        create: true
-
-
+    ~/.config/nvim: nvim
+    ~/.cache/dein/repos/github.com/Shougo/dein.vim: dein.vim
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.config/i3: i3
+    ~/.config/termite: termite
+    ~/.git_template: git_template

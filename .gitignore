@@ -1,0 +1,7 @@
+nvim/.netrwhist
+tmux/plugins/
+!tmux/plugins/tpm
+tmux/resurrect
+tags*
+repos/
+.nfs*
