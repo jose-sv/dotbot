@@ -22,7 +22,7 @@ geometry            = 400x400
 foreground      = #d5c4a1
 foreground_bold = #ebdbb2
 cursor          = #ebdbb2
-background      = #1d2021
+background      = #262626
 
 # 16 color space
 
