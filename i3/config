@@ -99,11 +99,11 @@ bindsym $mod+a focus parent
 
 #Name the workspace
 set $tag1 "1 "
-set $tag2 "2 wiki "
-set $tag3 "3 tf "
-set $tag4 "4 qual "
-set $tag5 "5 weapon "
-set $tag6 "6 ece385 "
+set $tag2 "2 APA "
+set $tag3 "3 "
+set $tag4 "4 FPAttack "
+set $tag5 "5 OLA "
+set $tag6 "6 "
 set $tag7 "7 "
 set $tag8 "8 "
 set $tag9 "9 "
@@ -117,8 +117,8 @@ set $tag15 "5.1 "
 set $tag16 "6.1 "
 set $tag17 "7.1 "
 set $tag18 "8.1 "
-set $tag19 "9.1 windows "
-set $tag20 "10.1 windows "
+set $tag19 "9.1 "
+set $tag20 "10.1 "
 
 set $tagM "Mendeley "
 set $tagG "git "
@@ -269,8 +269,8 @@ bar {
 		modifier Mod1
 }
 
-gaps inner 75
-gaps outer 50
+gaps inner 50
+gaps outer 10
 
 # lock
 # bindsym Control+Mod1+l exec lock -g -f Roboto-Mono-Medium-for-Powerline
@@ -303,6 +303,7 @@ bindsym $mod+Shift+w exec feh --recursive --randomize --bg-fill /home/rodrigo/Pi
 exec unity-settings-daemon &
 exec owncloud &
 exec nm-applet &
+exec redshift-gtk &
 exec /home/rodrigo/.screenlayout/displaySetup.sh
 exec --no-startup-id feh --recursive --randomize --bg-fill /home/rodrigo/Pictures/Wallpapers
 

@@ -13,11 +13,11 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/command-not-found
 	zgen oh-my-zsh plugins/git
 	zgen oh-my-zsh plugins/tmux
-	zgen oh-my-zsh plugins/extract
 	zgen oh-my-zsh plugins/history
 	zgen oh-my-zsh plugins/web-search
 	zgen oh-my-zsh plugins/vi-mode
 	zgen oh-my-zsh themes/ys
+	zgen oh-my-zsh plugins/extract
 
 	# NOTE: zsh-syntax-highlighting *must* come before zsh-history-substring
 	# search, else breakage occurs (or so I'm told).
@@ -27,7 +27,7 @@ if ! zgen saved; then
 	zgen load zsh-users/zsh-history-substring-search
 
 	# Use bullet train theme
-	#zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+	# zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 	zgen load win0err/aphrodite-terminal-theme aphrodite
 
 	# Generate the init.zsh script
@@ -75,3 +75,5 @@ then
 fi
 
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+
+unalias rm
