@@ -39,32 +39,49 @@ fi
 #
 #   - https://github.com/caiogondim/bullet-train.zsh/issues/192
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+#BULLETTRAIN_PROMPT_ORDER=($(echo ${BULLETTRAIN_PROMPT_ORDER[@]/#%nvm}))
 
-# for cuda
-export PATH=/usr/local/cuda-9.0/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:/usr/local/cuda-9.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
-
-# for fathom
-export PYTHONPATH=/main/fathom/fathom:$PYTHONPATH
-
-# alias cd='pushd'
-alias p='popd'
+#----------------------------------------
+# Aliases
+#----------------------------------------
+alias ls='ls --color=auto'
+alias ll='ls -l --color=auto'
+alias la='ls -la --color=auto'
 alias dirs='dirs -v'
+alias dd='dd status=progress'
+alias c='clear'
+alias grep='grep --color=auto'
+alias vim='nvim'
+alias p='popd'
+alias pu='pushd'
+alias diff='nvim -d'
+
+export TERM='xterm-256color'
+export EDITOR='nvim'
+unset GREP_OPTIONS
+
+bindkey -v
 
 # gitlab config, for engr gitlab
-export GITLAB_API_ENDPOINT=https://gitlab-beta.engr.illinois.edu/api/v4
-export GITLAB_API_PRIVATE_TOKEN=6M6c5scTU66B49EXEkYZ
+# export GITLAB_API_ENDPOINT=https://gitlab-beta.engr.illinois.edu/api/v4
+# export GITLAB_API_PRIVATE_TOKEN=6M6c5scTU66B49EXEkYZ
 # export PATH="/home/rodrigo/anaconda3/bin:$PATH"
 #
-alias vim='vim.nox'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export FZF_DEFAULT_COMMAND='ag ""'
-export FZF_DEFAULT_COMMAND='find . -path "*/\.*" -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//'
+# export FZF_DEFAULT_COMMAND='find . -path "*/\.*" -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//'
+# Source lmod init script
+# source /usr/share/lmod/lmod/init/profile
+# source /etc/profile.d/zzz_eli_lmod.sh
+# Fix for certain GTK apps crashing
+GTK_IM_MODULE=''
+
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
 
 # alias matlab='matlab -nodesktop -nodisplay -nosplash'
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH

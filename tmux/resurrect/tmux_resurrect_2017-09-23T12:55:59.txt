@@ -1,9 +1,0 @@
-pane	ece511	0	:vim	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511/gem5_master/src/cpu/pred	1	vim	:vim bi_mode.cc
-pane	openmsp430	0	:msp430	1	:*	0	:/main/owncloud/documents/School_UIUC/passat/openmsp430_scripts	1	ssh	:ssh exodus
-pane	raichu	0	:ssh	1	:*	0	:/main/owncloud/documents/School_UIUC/ta/ece511	1	ssh	:ssh raichu
-pane	zsh	0	:zsh	1	:*	0	:/tmp	1	zsh	:
-window	ece511	0	1	:*	6f76,359x99,0,0,36
-window	openmsp430	0	1	:*	6f72,359x99,0,0,32
-window	raichu	0	1	:*	6f78,359x99,0,0,38
-window	zsh	0	1	:*	6f75,359x99,0,0,35
-state	openmsp430	

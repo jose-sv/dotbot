@@ -1,1 +1,4 @@
-tmux_resurrect_2018-01-12T11:15:46.txt
+pane	TMUX	0	:zsh	1	:*Z	0	:/secondary/apa	1	zsh	:
+pane	TMUX	0	:zsh	1	:*Z	1	:/secondary/apa	0	sh	:/bin/sh /usr/bin/xdg-open genFig.png
+window	TMUX	0	1	:*Z	760a,156x88,0,0{79x88,0,0,0,76x88,80,0,1}
+state	TMUX	

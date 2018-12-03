@@ -1,5 +1,0 @@
-pane	openmsp430	0	:msp430	1	:*	0	:/main/owncloud/documents/School_UIUC/passat/openmsp430_scripts	1	ssh	:ssh exodus
-pane	zsh	0	:zsh	1	:*	0	:/tmp	1	zsh	:
-window	openmsp430	0	1	:*	6f72,359x99,0,0,32
-window	zsh	0	1	:*	6f75,359x99,0,0,35
-state	zsh	openmsp430
