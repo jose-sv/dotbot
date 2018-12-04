@@ -30,10 +30,12 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
 Plug 'ncm2/ncm2-cssomni'
 Plug 'ncm2/ncm2-tern', {'do': 'npm install'}
+Plug 'ncm2/ncm2-pyclang'
 
 Plug 'luochen1990/rainbow'
 Plug 'tomtom/tcomment_vim'
