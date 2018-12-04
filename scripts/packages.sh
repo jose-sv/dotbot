@@ -6,8 +6,6 @@ sudo apt install -y \
   cmus \
   ctags \
   curl \
-  feh \
-  fonts-font-awesome \
   ghc \
   git \
   haskell-stack \

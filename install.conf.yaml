@@ -13,13 +13,12 @@
   # Make config directories
   - mkdir -p ~/.dotfiles/repos
   - mkdir -p ~/.git_template/hooks
-  - mkdir -p ~/.cache/dein/repos/github.com/Shougo
+  # - mkdir -p ~/.cache/dein/repos/github.com/Shougo
   # Run scripts
   - ./scripts/packages.sh
-  - ./scripts/termite-install.sh
-  - ./scripts/i3-gaps-install.sh
+  # - ./scripts/termite-install.sh
   - ./scripts/fzf-install.sh
-  - ./scripts/powerline-fonts-install.sh
+  # - ./scripts/powerline-fonts-install.sh
   # Git configs
   - git config --global core.editor "nvim"
   - git config --global init.templatedir '~/.git_template'
@@ -28,9 +27,7 @@
     ~/.zgen: zgen
     ~/.zshrc: zshrc
     ~/.config/nvim: nvim
-    ~/.cache/dein/repos/github.com/Shougo/dein.vim: dein.vim
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.config/i3: i3
     ~/.config/termite: termite
     ~/.git_template: git_template
