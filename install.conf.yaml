@@ -17,7 +17,6 @@
   # Run scripts
   - ./scripts/packages.sh
   - ./scripts/termite-install.sh
-  - ./scripts/i3-gaps-install.sh
   - ./scripts/fzf-install.sh
   - ./scripts/powerline-fonts-install.sh
   # Git configs
@@ -28,9 +27,8 @@
     ~/.zgen: zgen
     ~/.zshrc: zshrc
     ~/.config/nvim: nvim
-    ~/.cache/dein/repos/github.com/Shougo/dein.vim: dein.vim
+    # ~/.cache/dein/repos/github.com/Shougo/dein.vim: dein.vim
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.config/i3: i3
     ~/.config/termite: termite
     ~/.git_template: git_template
