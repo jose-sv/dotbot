@@ -1,57 +1,69 @@
-" Setup dein and install plugins
-if &compatible
-	set nocompatible
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'w0rp/ale'
+Plug 'jiangmiao/auto-pairs'
+Plug 'raimondi/delimitmate'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'mattn/emmet-vim'
+
+" fzf for fuzzy finding
+if has('macunix')
+  Plug '/usr/local/opt/fzf'
+  Plug '/usr/local/opt/rg'
+else
+  set rtp+=/usr/bin/fzf
+  set rtp+=/usr/bin/rg
 endif
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+Plug 'junegunn/fzf.vim'
 
-if dein#load_state('~/.cache/dein')
-	call dein#begin('~/.cache/dein')
+Plug 'junegunn/gv.vim'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'haya14busa/incsearch.vim'
+Plug 'parsonsmatt/intero-neovim'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'davidhalter/jedi-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
+Plug 'shinchu/lightline-gruvbox.vim'
 
-	call dein#add('~/.cache/dein')
+" ncm2 auto-completion
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-jedi'
+Plug 'ncm2/ncm2-cssomni'
+Plug 'ncm2/ncm2-tern', {'do': 'npm install'}
 
-	call dein#add('w0rp/ale')
-  call dein#add('jiangmiao/auto-pairs')
-	call dein#add('raimondi/delimitmate')
-	call dein#add('Shougo/deoplete.nvim')
-	if !has('nvim')
-		call dein#add('roxma/nvim-yarp')
-		call dein#add('roxma/vim-hug-neovim-rpc')
-	endif
-  call dein#add('~/.fzf')
-  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
-	call dein#add('junegunn/gv.vim')
-	call dein#add('neovimhaskell/haskell-vim')
-	call dein#add('haya14busa/incsearch.vim')
-	call dein#add('parsonsmatt/intero-neovim')
-	call dein#add('vim-scripts/indentpython.vim')
-	call dein#add('itchyny/lightline.vim')
-  call dein#add('maximbaz/lightline-ale')
-	call dein#add('shinchu/lightline-gruvbox.vim')
-  call dein#add('tomtom/tcomment_vim')
-	call dein#add('Shougo/unite.vim')
-	call dein#add('qpkorr/vim-bufkill')
-	call dein#add('flazz/vim-colorschemes')
-	call dein#add('easymotion/vim-easymotion')
-	call dein#add('Shougo/vimfiler.vim')
-	call dein#add('tpope/vim-fugitive')
-	call dein#add('airblade/vim-gitgutter')
-	call dein#add('ludovicchabant/vim-gutentags')
-	call dein#add('alx741/vim-hindent')
-	call dein#add('tpope/vim-obsession')
-	call dein#add('sheerun/vim-polyglot')
-	call dein#add('mhinz/vim-startify')
-	call dein#add('alx741/vim-stylishask')
-	call dein#add('lervag/vimtex')
-	call dein#add('christoomey/vim-tmux-navigator')
-	call dein#add('jmcantrell/vim-virtualenv')
-	call dein#add('maxbrunsfeld/vim-yankstack')
-	call dein#add('tpope/vim-unimpaired')
+Plug 'luochen1990/rainbow'
+Plug 'tomtom/tcomment_vim'
+Plug 'Shougo/unite.vim'
+Plug 'qpkorr/vim-bufkill'
+Plug 'ap/vim-buftabline'
+Plug 'flazz/vim-colorschemes'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-eunuch'
+Plug 'Shougo/vimfiler.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'alx741/vim-hindent'
+Plug 'tpope/vim-obsession'
+Plug 'airblade/vim-rooter'
+Plug 'sheerun/vim-polyglot'
+Plug 'mhinz/vim-startify'
+Plug 'alx741/vim-stylishask'
+Plug 'lervag/vimtex'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'posva/vim-vue'
+Plug 'liuchengxu/vim-which-key'
+Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'tpope/vim-unimpaired'
+Plug 'ludovicchabant/vim-gutentags'
 
-	let g:deoplete#enable_at_startup = 1
-	call dein#end()
-	call dein#save_state()
-endif
+call plug#end()
 
+	" call dein#add('tpope/vim-unimpaired')
+	" call dein#add('ludovicchabant/vim-gutentags')
 filetype plugin indent on
 syntax enable

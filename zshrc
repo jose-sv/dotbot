@@ -54,7 +54,6 @@ alias grep='grep --color=auto'
 alias vim='nvim'
 alias p='popd'
 alias pu='pushd'
-alias diff='nvim -d'
 
 export TERM='xterm-256color'
 export EDITOR='nvim'

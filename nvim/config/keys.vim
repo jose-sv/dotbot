@@ -1,4 +1,7 @@
-" dein
+" vim-plug
+map <leader>pi :PlugInstall<cr>
+map <leader>pu :PlugUpdate<cr>
+
 vnoremap $1 <esc>`>a)<esc>`<i(<esc>
 vnoremap $2 <esc>`>a]<esc>`<i[<esc>
 vnoremap $3 <esc>`>a}<esc>`<i{<esc>
@@ -14,9 +17,6 @@ inoremap $4 {<esc>o}<esc>O
 inoremap $q ''<esc>i
 inoremap $e ""<esc>i
 inoremap $i <esc>I\item <esc>A
-
-map <leader>di :call dein#install()<cr>
-map <leader>du :call dein#update()<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -51,6 +51,11 @@ let g:lasttab = 1
 nmap <leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
+" buffer mappings
+nnoremap <C-N> :bnext<cr>
+nnoremap <C-P> :bprev<cr>
+map <leader>w :bd<cr>
+
 " for splits
 set splitright
 set splitbelow
@@ -61,8 +66,30 @@ nmap ; :Buffers<CR>
 nmap <Leader>t :Files<CR>
 nmap <Leader>r :Tags<CR>
 
-" VimFiler mappings
+" send deletes to null register
+nnoremap <leader>d "_d
+
+" paste mode toggle
+set pastetoggle=<leader>z
+
+nnoremap c* /\<<C-R>=expand('<cword>')<cr>\>\C<cr>``cgn
+nnoremap c# ?\<<C-R>=expand('<cword>')<cr>\>\C<cr>``cgN
+nnoremap d* /\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgn
+nnoremap d# ?\<<C-r>=expand('<cword>')<cr>\>\C<cr>``dgN
+
+" VimFiler
 map <leader>vf :VimFilerBufferDir<cr>
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" fzf
+map <leader>o :FZF<cr>
+" ripgrep
+map <leader>f :Rg<cr>
+
+" Startify
+map <leader>s :Startify<cr>
+
+" sudo save to avoid permission denied
+" command W w !sudo tee % > /dev/null
