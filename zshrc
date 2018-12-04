@@ -72,8 +72,8 @@ bindkey -v
 # export FZF_DEFAULT_COMMAND='ag ""'
 # export FZF_DEFAULT_COMMAND='find . -path "*/\.*" -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//'
 # Source lmod init script
-# source /usr/share/lmod/lmod/init/profile
-# source /etc/profile.d/zzz_eli_lmod.sh
+source /usr/share/lmod/lmod/init/profile
+source /etc/profile.d/zzz_eli_lmod.sh
 # Fix for certain GTK apps crashing
 GTK_IM_MODULE=''
 
