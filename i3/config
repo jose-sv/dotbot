@@ -273,7 +273,7 @@ gaps inner 50
 gaps outer 10
 
 # lock
-# bindsym Control+Mod1+l exec lock -g -f Roboto-Mono-Medium-for-Powerline
+bindsym Control+Mod1+Shift+l exec lock
 bindsym Control+Mod1+l exec i3lock -c 000000
 # lock and sleep
 # bindsym Control+Mod1+s exec systemctl suspend && lock
