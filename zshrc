@@ -54,6 +54,7 @@ alias grep='grep --color=auto'
 alias vim='nvim'
 alias p='popd'
 alias pu='pushd'
+alias ipython="python3 -m IPython"
 
 export TERM='xterm-256color'
 export EDITOR='nvim'
