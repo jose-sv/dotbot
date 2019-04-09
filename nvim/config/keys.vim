@@ -91,5 +91,7 @@ map <leader>f :Rg<cr>
 " Startify
 map <leader>s :Startify<cr>
 
+map <leader>gc :Gcommit %<cr>
+
 " sudo save to avoid permission denied
 " command W w !sudo tee % > /dev/null

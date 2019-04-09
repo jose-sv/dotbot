@@ -73,15 +73,15 @@ bindkey -v
 # export FZF_DEFAULT_COMMAND='ag ""'
 # export FZF_DEFAULT_COMMAND='find . -path "*/\.*" -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//'
 # Source lmod init script
-source /usr/share/lmod/lmod/init/profile
-source /etc/profile.d/zzz_eli_lmod.sh
+# source /usr/share/lmod/lmod/init/profile
+# source /etc/profile.d/zzz_eli_lmod.sh
 # Fix for certain GTK apps crashing
 GTK_IM_MODULE=''
 
-if [ -z "$TMUX" ]
-then
-    tmux attach -t TMUX || tmux new -s TMUX
-fi
+# if [ -z "$TMUX" ]
+# then
+#     tmux attach -t TMUX || tmux new -s TMUX
+# fi
 
 # alias matlab='matlab -nodesktop -nodisplay -nosplash'
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
