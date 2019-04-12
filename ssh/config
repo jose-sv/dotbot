@@ -3,7 +3,7 @@ Host ews
 	User josers2
 	IdentityFile ~/.ssh/uiuc_id_rsa
 Host gitlab.engr.illinois.edu
-	RSAAuthentication yes
+	PubkeyAuthentication yes
 	IdentityFile ~/.ssh/illinois_gitlab
 	User git
 
