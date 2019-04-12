@@ -32,3 +32,4 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/termite: termite
     ~/.git_template: git_template
+    ~/hosts: hosts
