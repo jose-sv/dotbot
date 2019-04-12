@@ -265,11 +265,11 @@ bar {
         status_command i3status
         tray_output primary
 		mode dock
-		font pango:Roboto-Mono-Medium-for-Powerline 13
+		font pango:Roboto-Mono-Medium-for-Powerline 8
 		modifier Mod1
 }
 
-gaps inner 50
+gaps inner 20
 gaps outer 10
 
 # lock
@@ -306,6 +306,7 @@ exec nm-applet &
 exec redshift-gtk &
 exec /home/rodrigo/.screenlayout/displaySetup.sh
 exec --no-startup-id feh --recursive --randomize --bg-fill /home/rodrigo/Pictures/Wallpapers
+exec setxkbmap -option ctrl:swapcaps
 
 # for_window [title="Write:.*" class="Thunderbird"] floating enable
 # for_window [class="Franz"] floating enable
