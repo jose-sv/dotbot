@@ -39,22 +39,22 @@ Host weapon
 Host bahamut
     Hostname bahamut.cs.illinois.edu
     User josers2
-    IdentityFile ~/.ssh/bahamut_id_rsa
+    IdentityFile ~/.ssh/weapon_id_rsa
 
 Host midgar
     Hostname midgar.cs.illinois.edu
     User josers2
-    IdentityFile ~/.ssh/bahamut_id_rsa
+    IdentityFile ~/.ssh/weapon_id_rsa
 
 Host highwind
     Hostname highwind.cs.illinois.edu
     User josers2
-    IdentityFile ~/.ssh/bahamut_id_rsa
+    IdentityFile ~/.ssh/weapon_id_rsa
 
 Host mako
     Hostname mako.cs.illinois.edu
     User josers2
-    IdentityFile ~/.ssh/bahamut_id_rsa
+    IdentityFile ~/.ssh/weapon_id_rsa
 
 Host zapdos
     Hostname zapdos.cs.illinois.edu
