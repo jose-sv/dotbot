@@ -146,3 +146,5 @@ set colorcolumn=80
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
+
+hi Normal guibg=NONE ctermbg=NONE
