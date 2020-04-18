@@ -56,12 +56,13 @@ Plug 'mhinz/vim-startify'
 Plug 'alx741/vim-stylishask'
 Plug 'lervag/vimtex'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'jmcantrell/vim-virtualenv'
+Plug 'jmcantrell/vim-virtualenv', {'for': ['python', 'python3']}
 Plug 'posva/vim-vue'
 Plug 'liuchengxu/vim-which-key'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'tpope/vim-unimpaired'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'antiagainst/cscope-macros.vim'
 
 call plug#end()
 
