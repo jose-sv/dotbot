@@ -86,3 +86,10 @@ GTK_IM_MODULE=''
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 
 unalias rm
+
+alias glances=./Library/Python/2.7/bin/glances
+
+alias tasks=/Users/josesanchezvicarte/todo/tasks
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+alias fm='/Users/josesanchezvicarte/file_management/process_file.py'
