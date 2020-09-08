@@ -17,6 +17,10 @@ contexts:
     - match: \[sn:[0-9]+\]
       scope: constant.numeric
 
+  tid:
+    - match: \[tid:[0-9]+\]
+      scope: comment.line
+
   squash:
     - match: (Squashing|Squash)
       scope: markup.underline
@@ -57,7 +61,7 @@ contexts:
   pipe:
     - include: pop-at-end
 
-    - match: ':\s.*'
+    - match: '\d+:\s.*'
       scope: constant.numeric
 
     - match: '^O3PipeView'
@@ -81,12 +85,19 @@ contexts:
     - match: \sRegFile.*
       scope: storage.type
 
-    - match: \w+
+    - match: '\w+:'
+      scope: variable.parameter
+
+    - match: Instruction destroyed
+      scope: variable.parameter
+
+    - match: Instruction created\.
       scope: variable.parameter
 
   system:
     - include: pop-at-end
     - include: seqnum
+    - include: tid
     - include: squash
     - include: hexval
 
@@ -99,6 +110,12 @@ contexts:
     - match: Not able to schedule any instructions.
       scope: entity.name.tag
 
+    - match: Instruction is:.*
+      scope: constant.numeric
+
+    - match: Removing instruction
+      scope: variable.parameter
+
     - match: \.cpu
       scope: string.quoted.single
       push: cpu
@@ -106,6 +123,10 @@ contexts:
     - match: \.mem
       scope: string.quoted.single
       push: mem
+
+    - match: \.ruby
+      scope: storage.type
+      push: ruby
 
   cpu:
     - include: pop-at-end
@@ -125,3 +146,18 @@ contexts:
       scope: variable.parameter
       pop: true
 
+  ruby:
+    - include: pop-at-end
+    - include: hexval
+
+    - match: \s
+      scope: string.quoted.single
+
+    - match: '\.[\d\w][\.\d\w_-]+:'
+      scope: variable.parameter
+
+    - match: system\.[\w\.-]+
+      scope: string.quoted.single
+
+    - match: \[.+\]
+      scope: storage.type

@@ -1,0 +1,72 @@
+%YAML 1.2
+# [Sublime]: https://www.sublimetext.com/docs/3/syntax.html
+# [Bash]:    https://www.gnu.org/software/bash/manual/bash.html
+--- #---------------------------------------------------------------------------
+
+name: hex
+
+# The suffix is bash, but we still use .shell as a suffix anyway. This is to
+# promote reusability of foreign scopes.
+scope: log.hex
+
+file_extensions:
+  - objdump
+
+first_line_match: |
+    \n^.*: file format elf64-x86-64
+
+contexts:
+  pop-at-end:
+    - match: $
+      pop: true
+
+  main:
+    - match: 'Disassembly of section .*:'
+      scope: variable.parameter
+
+    - match: '^[abcdef\d]+\s'
+      scope: comment.block
+      push: function
+
+    - match: '^\s+[abcdef\d]+:\s+'
+      scope: string.quoted.single
+      push: instruction
+
+
+  function:
+    - include: pop-at-end
+
+    - match: '<[^+]*>'
+      scope: variable.parameter
+
+  instruction:
+    - include: pop-at-end
+
+    - match: '(\b[abcdef\d]{2}\b\s)+'
+      push: inst
+
+    - match: '<.*>'
+      scope: variable.parameter
+
+    - match: '#.*'
+      scope: comment.block
+
+  inst:
+    - include: pop-at-end
+
+    - match: 'rdtsc'
+      scope: entity.name.tag
+      pop: true
+
+    - match: '(j\w*|callq|retq)'
+      scope: string.quoted.single
+      pop: true
+
+    - match: 'mov\w*'
+      scope: storage.type
+      pop: true
+
+    - match: '(\w+\b)'
+      scope: entity.name
+      pop: true
+
