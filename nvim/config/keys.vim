@@ -93,3 +93,27 @@ map <leader>s :Startify<cr>
 
 " sudo save to avoid permission denied
 " command W w !sudo tee % > /dev/null
+
+" function! Paste(regname, pasteType, pastecmd)
+"   let reg_type = getregtype(a:regname)
+"   call setreg(a:regname, getreg(a:regname), a:pasteType)
+"   exe 'normal "'.a:regname . a:pastecmd
+"   call setreg(a:regname, getreg(a:regname), reg_type)
+" endfunction
+" nmap <Leader>lP :call Paste(v:register, "l", "P")<CR>
+" nmap <Leader>lp :call Paste(v:register, "l", "p")<CR>
+" nmap <Leader>cP :call Paste(v:register, "v", "P")<CR>
+" nmap <Leader>cp :call Paste(v:register, "v", "p")<CR>
+" nmap <Leader>bP :call Paste(v:register, "b", "P")<CR>
+" nmap <Leader>bp :call Paste(v:register, "b", "p")<CR>
+"
+" function! PasteJointCharacterwise(regname, pastecmd)
+"   let reg_type = getregtype(a:regname)
+"   call setreg(a:regname, '', "ac")
+"   exe 'normal "'.a:regname . a:pastecmd
+"   call setreg(a:regname, '', "a".reg_type)
+"   exe 'normal `[v`]J'
+" endfunction
+" nmap <Leader>p :call PasteJointCharacterwise(v:register, "p")<CR>
+" nmap <Leader>P :call PasteJointCharacterwise(v:register, "P")<CR>
+"

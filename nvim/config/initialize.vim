@@ -14,6 +14,7 @@ else
   set rtp+=/usr/bin/fzf
   set rtp+=/usr/bin/rg
 endif
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'junegunn/gv.vim'
@@ -62,6 +63,11 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'tpope/vim-unimpaired'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'antiagainst/cscope-macros.vim'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'kenn7/vim-arsync'
+
+Plug 'inkarkat/vim-UnconditionalPaste'
 
 call plug#end()
 

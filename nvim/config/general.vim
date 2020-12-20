@@ -139,7 +139,8 @@ autocmd BufWrite * :call DeleteTrailingWS()
 set path=.,,**
 
 set background=dark
-colorscheme gruvbox
+colorscheme nord
+set termguicolors
 
 set cursorline
 set colorcolumn=80

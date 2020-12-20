@@ -91,5 +91,14 @@ alias glances=./Library/Python/2.7/bin/glances
 
 alias tasks=/Users/josesanchezvicarte/todo/tasks
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="$HOME/Library/Python/3.8/bin/:$PATH"
 
 alias fm='/Users/josesanchezvicarte/file_management/process_file.py'
+
+alias lg='lazygit'
+
+alias vpn='sudo openconnect --user josers2 --protocol=anyconnect vpn.cites.illinois.edu --passwd-on-stdin --authgroup=1 < ~/ocp'
+
+function bw_prev {
+    gs -sOutputFile=$1_gray.pdf -sDEVICE=pdfwrite -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -dCompatibiltyLevel=1.4 -dNOPAUSE -dBATCH $@
+}
