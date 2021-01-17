@@ -1,0 +1,103 @@
+%YAML 1.2
+# [Sublime]: https://www.sublimetext.com/docs/3/syntax.html
+# [Bash]:    https://www.gnu.org/software/bash/manual/bash.html
+--- #---------------------------------------------------------------------------
+
+name: arm
+
+# The suffix is bash, but we still use .shell as a suffix anyway. This is to
+# promote reusability of foreign scopes.
+scope: log.arm
+
+file_extensions:
+  - objdump
+  - S
+
+first_line_match: |
+    .*\n^(__TEXT__,__text) section$
+
+contexts:
+  pop-at-end:
+    - match: $
+      pop: true
+
+  main:
+    - match: 'Disassembly of section .*:'
+      scope: variable.parameter
+
+    - match: '^\w+:'
+      scope: string.quoted.single
+      # scope: comment.block
+      push: function
+
+    - match: '^\s*[abcdef\d]+\s+'
+      scope: comment.block
+      # scope: string.quoted.single
+      push: inst
+
+  function:
+    - include: pop-at-end
+
+    - match: '.*'
+      scope: variable.parameter
+
+    - match: '<[^+]*>'
+      scope: variable.parameter
+
+  inst:
+    - include: pop-at-end
+
+    - match: 'rdtsc[p]*'
+      scope: entity.name.tag
+      push: dest
+
+    - match: '(b\w*(\.\w+){0,1}|j\w*|callq|retq)'
+      scope: constant.numeric
+      push: branch
+
+    - match: 'mov\w*'
+      scope: storage.type
+      push: dest
+
+    - match: '([\w\.]+\b)'
+      scope: entity.name
+      push: dest
+
+  dest:
+    - include: pop-at-end
+
+    - match: '\w+,'
+      scope: string.quoted.single
+      push: sources
+
+  branch:
+    - include: pop-at-end
+
+    - match: '0x[abcdef\d]+ ;'
+      push: b-target
+
+    - match: '\w+'
+      scope: entity.name.tag
+      pop: true
+
+  b-target:
+    - include: pop-at-end
+
+    - match: '.*'
+      scope: entity.name.tag
+
+  comment:
+    - include: pop-at-end
+
+    - match: '.*'
+      scope: comment
+
+  sources:
+    - include: pop-at-end
+
+    - match: '\[\w+,\]'
+
+    - match: '#-{0,1}0x[abcdef\d]+'
+
+    - match: ';'
+      push: comment
