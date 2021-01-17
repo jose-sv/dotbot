@@ -1,0 +1,163 @@
+%YAML 1.2
+# [Sublime]: https://www.sublimetext.com/docs/3/syntax.html
+# [Bash]:    https://www.gnu.org/software/bash/manual/bash.html
+--- #---------------------------------------------------------------------------
+
+name: gem5
+
+# The suffix is bash, but we still use .shell as a suffix anyway. This is to
+# promote reusability of foreign scopes.
+scope: log.gem5
+
+file_extensions:
+  - debug.out
+
+contexts:
+  seqnum:
+    - match: \[sn:[0-9]+\]
+      scope: constant.numeric
+
+  tid:
+    - match: \[tid:[0-9]+\]
+      scope: comment.line
+
+  squash:
+    - match: (Squashing|Squash)
+      scope: markup.underline
+
+  hexval:
+    - match: 0x[\d\w]+
+      scope: entity.name
+
+  pop-at-end:
+    - match: $
+      pop: true
+
+  main:
+    # - match: Access to.*$
+    #   scope: variable.parameter
+    #
+    # - match: Setting Destination Register.*$
+    #   scope: variable.parameter
+    - match: '\d+.\sglobal:'
+      scope: variable.parameter
+      push: global
+
+    - match: \d+.\ssystem
+      scope: string.quoted.single
+      push: system
+
+
+    - match: Not able to schedule any instructions.
+      scope: entity.name.tag
+
+    - match: ^O3PipeView
+      scope: comment.block
+      push: pipe
+
+    - match: FullO3CPU. Ticking main, FullO3CPU.
+      scope: entity.name.tag
+
+  pipe:
+    - include: pop-at-end
+
+    - match: '\d+:\s.*'
+      scope: constant.numeric
+
+    - match: '^O3PipeView'
+      scope: comment.block
+
+    - match: '\D+'
+      scope: comment.block
+
+    - match: '0x\w+'
+      scope: comment.block
+
+    - match: '\d+'
+      scope: entity.name
+
+  global:
+    - include: pop-at-end
+    - include: seqnum
+    - include: squash
+    - include: hexval
+
+    - match: \sRegFile.*
+      scope: storage.type
+
+    - match: '\w+:'
+      scope: variable.parameter
+
+    - match: Instruction destroyed
+      scope: variable.parameter
+
+    - match: Instruction created\.
+      scope: variable.parameter
+
+  system:
+    - include: pop-at-end
+    - include: seqnum
+    - include: tid
+    - include: squash
+    - include: hexval
+
+    - match: \[tid:\d+\] Blocking.
+      scope: entity.name.tag
+
+    - match: Read called.*
+      scope: storage.type
+
+    - match: Not able to schedule any instructions.
+      scope: entity.name.tag
+
+    - match: Instruction is:.*
+      scope: constant.numeric
+
+    - match: Removing instruction
+      scope: variable.parameter
+
+    - match: \.cpu
+      scope: string.quoted.single
+      push: cpu
+
+    - match: \.mem
+      scope: string.quoted.single
+      push: mem
+
+    - match: \.ruby
+      scope: storage.type
+      push: ruby
+
+  cpu:
+    - include: pop-at-end
+
+    - match: \s
+      scope: string.quoted.single
+      pop: true
+
+    - match: '[\d\w][\.\d\w]+'
+      scope: variable.parameter
+      pop: true
+
+  mem:
+    - include: pop-at-end
+
+    - match: \w+
+      scope: variable.parameter
+      pop: true
+
+  ruby:
+    - include: pop-at-end
+    - include: hexval
+
+    - match: \s
+      scope: string.quoted.single
+
+    - match: '\.[\d\w][\.\d\w_-]+:'
+      scope: variable.parameter
+
+    - match: system\.[\w\.-]+
+      scope: string.quoted.single
+
+    - match: \[.+\]
+      scope: storage.type
