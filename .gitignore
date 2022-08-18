@@ -5,3 +5,4 @@ tmux/resurrect
 tags*
 repos/
 .nfs*
+nvim/plugged
