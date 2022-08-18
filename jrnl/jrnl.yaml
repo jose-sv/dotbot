@@ -1,0 +1,39 @@
+colors:
+  body: none
+  date: none
+  tags: none
+  title: none
+default_hour: 9
+default_minute: 0
+editor: nvim
+encrypt: false
+highlight: true
+indent_character: '|'
+journals:
+  mld:
+    encrypt: false
+    journal: ~/jrnl/mld.txt
+  ddpf:
+    encrypt: false
+    journal: ~/jrnl/ddpf.txt
+  default: ~/jrnl/journal.txt
+  urgs:
+    encrypt: false
+    journal: ~/jrnl/urgs.txt
+  xx:
+    encrypt: false
+    journal: ~/jrnl/xx.txt
+  artemis:
+    encrypt: false
+    journal: ~/jrnl/artemis.txt
+  cs598oss:
+    encrypt: false
+    journal: ~/jrnl/cs598oss.txt
+  cs598cg:
+    encrypt: false
+    journal: ~/jrnl/cs598cg.txt
+linewrap: 79
+tagsymbols: '@'
+template: false
+timeformat: '%Y-%m-%d %H:%M'
+version: v2.7.1
