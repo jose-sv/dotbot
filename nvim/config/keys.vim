@@ -46,6 +46,8 @@ map <leader>p :echo expand('%')<cr>
 map <leader>cn :cn<cr>
 map <leader>cp :cn<cr>
 
+map <leader>todo :vimgrep TODO %<cr>:cw<cr>
+
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
 nmap <leader>tl :exe "tabn ".g:lasttab<CR>
@@ -116,4 +118,9 @@ map <leader>s :Startify<cr>
 " endfunction
 " nmap <Leader>p :call PasteJointCharacterwise(v:register, "p")<CR>
 " nmap <Leader>P :call PasteJointCharacterwise(v:register, "P")<CR>
-"
+
+nmap <silent> <leader>k <Plug>(ale_previous_wrap)
+nmap <silent> <leader>j <Plug>(ale_next_wrap)
+
+map <leader>tb :TagbarOpen j<cr>
+map <leader>nt :NERDTree<cr>

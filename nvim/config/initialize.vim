@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'w0rp/ale'
+Plug 'psf/black', { 'branch': 'stable' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'raimondi/delimitmate'
 Plug 'editorconfig/editorconfig-vim'
@@ -8,12 +9,16 @@ Plug 'mattn/emmet-vim'
 
 " fzf for fuzzy finding
 if has('macunix')
-  Plug '/usr/local/opt/fzf'
-  Plug '/usr/local/opt/rg'
+  Plug '/opt/homebrew/opt/fzf'
+  " Plug '/usr/local/opt/fzf'
+  Plug '/opt/homebrew/opt/rg'
+  " Plug '/usr/local/opt/rg'
 else
-  set rtp+=/usr/bin/fzf
-  set rtp+=/usr/bin/rg
+  set rtp+=/opt/homebrew/opt/fzf
+  set rtp+=/opt/homebrew/bin/rg
+  " set rtp+=/usr/bin/rg
 endif
+Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
@@ -22,7 +27,7 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'parsonsmatt/intero-neovim'
 Plug 'vim-scripts/indentpython.vim'
-Plug 'davidhalter/jedi-vim'
+" Plug 'davidhalter/jedi-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -68,6 +73,18 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'kenn7/vim-arsync'
 
 Plug 'inkarkat/vim-UnconditionalPaste'
+
+Plug 'preservim/nerdtree'
+Plug 'preservim/tagbar'
+
+Plug 'github/copilot.vim'
+
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'kevinhwang91/nvim-bqf'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 

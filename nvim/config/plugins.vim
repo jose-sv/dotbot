@@ -89,3 +89,67 @@ let g:startify_change_to_vcs_root = 1
 
 " vim-which-key
 nnoremap <silent> <leader> :WhichKey ','<CR>
+
+" Run black on saving a python file
+autocmd BufWritePre *.py execute ':Black'
+
+" let g:ale_fixers = ['black']
+" let g:ale_fix_on_save = 1
+nmap <leader>fi :Black<CR>
+
+let g:gutentags_ctags_extra_args = [
+                  \ '--kinds-C=+l',
+                  \ '--kinds-C++=+l'
+                  \ ]
+
+let g:tagbar_type_cpp = {
+    \ 'kinds' : [
+        \ 'd:macros:1',
+        \ 'g:enums',
+        \ 't:typedefs:0:0',
+        \ 'e:enumerators:0:0',
+        \ 'n:namespaces',
+        \ 'c:classes',
+        \ 's:structs',
+        \ 'u:unions',
+        \ 'f:functions',
+        \ 'm:members:0:0',
+        \ 'v:global:0:0',
+        \ 'x:external:0:0',
+        \ 'l:local:0:0'
+    \ ]
+\ }
+
+let g:tagbar_type_c = {
+    \ 'kinds' : [
+        \ 'd:macros:1',
+        \ 'g:enums',
+        \ 't:typedefs:0:0',
+        \ 'e:enumerators:0:0',
+        \ 'n:namespaces',
+        \ 'c:classes',
+        \ 's:structs',
+        \ 'u:unions',
+        \ 'f:functions',
+        \ 'm:members:0:0',
+        \ 'v:global:0:0',
+        \ 'x:external:0:0',
+        \ 'l:local:0:0'
+    \ ]
+\ }
+
+let g:NERDTreeWinSize=25
+let g:tagbar_width=30
+
+let g:vimtex_quickfix_ignore_filters = [
+      \ 'Underfull',
+      \]
+
+" let g:vimtex_compiler_method = 'tectonic'
+let g:vimtex_quickfix_method = 'pplatex'
+
+augroup DragQuickfixWindowDown
+    autocmd!
+    autocmd FileType qf wincmd J
+augroup end
+

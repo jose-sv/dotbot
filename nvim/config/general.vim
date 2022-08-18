@@ -1,6 +1,12 @@
-set rtp+=~/.fzf
+" set rtp+=~/.fzf
+set rtp+=/opt/homebrew/opt/fzf
 
 set t_Co=256
+
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+" let g:ruby_host_prog = '/Users/josesanchezvicarte/.gem/ruby/2.6.0/bin/neovim-ruby-host'
+"
+let g:ncm2_pyclang#library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
 
 " Python highlighting
 let python_highlight_all=1
@@ -96,15 +102,21 @@ set expandtab
 " Access system clipboard
 set clipboard=unnamed
 
+set colorcolumn=80
+
 " python PEP8 indentation standards
 au BufNewFile,BufRead *.py
       \ set tabstop=4 |
       \ set softtabstop=4 |
       \ set shiftwidth=4 |
-      \ set textwidth=79 |
+      \ set textwidth=88 |
+      \ set colorcolumn=88 |
       \ set expandtab |
       \ set autoindent |
       \ set fileformat=unix
+
+au BufNewFile,BufRead *.jrnl
+      \ set spell
 
 " 2 space tab indentation
 au BufNewFile,BufRead *.html,*.tex,*.vim,*.sh
@@ -143,7 +155,6 @@ colorscheme nord
 set termguicolors
 
 set cursorline
-set colorcolumn=80
 
 " Remap VIM 0 to first non-blank character
 map 0 ^

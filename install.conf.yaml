@@ -16,9 +16,7 @@
   - mkdir -p ~/.cache/dein/repos/github.com/Shougo
   # Run scripts
   - ./scripts/packages.sh
-  - ./scripts/termite-install.sh
   - ./scripts/fzf-install.sh
-  - ./scripts/powerline-fonts-install.sh
   # Git configs
   - git config --global core.editor "nvim"
   - git config --global init.templatedir '~/.git_template'
